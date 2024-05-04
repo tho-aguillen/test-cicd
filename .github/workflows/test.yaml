@@ -1,0 +1,13 @@
+name: learn-github-actions
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  workflow_dispatch:
+
+jobs:
+  echo-caller:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: tho-aguillen/test-workflow/.github/workflows/test.yaml@v1.0.0
+        with:
+          caller: "test-cicd"
