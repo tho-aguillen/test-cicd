@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_OPTIONS: "JANDER"
+  NODE_OPTIONS_ARGS: "JANDER"
 
 jobs:
   echo-caller:
