@@ -5,6 +5,6 @@ on:
 
 jobs:
   echo-caller:
-    uses: tho-aguillen/test-workflow/.github/workflows/test.yaml@v1.0
+    uses: tho-aguillen/test-workflow/.github/workflows/test.yaml@main
     with:
       caller: "test-cicd"
