@@ -3,6 +3,9 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   workflow_dispatch:
 
+env:
+  NODE_OPTIONS: "JANDER"
+
 jobs:
   echo-caller:
     uses: tho-aguillen/test-workflow/.github/workflows/test.yaml@main
